@@ -49,8 +49,7 @@ public class LoginServiceImpl<T> implements LoginService {
                     log.info("LoginServiceImpl::loginUser()::loadUserByUsername()");
                     UserDetails userDetails = this.detailsService.loadUserByUsername(loginDto.getUsername());
                     log.info("LoginServiceImpl::loginUser()::generateToken()");
-                    Map<String, Object> claims = new HashMap<String, Object>();
-                    String token = jwtutils.generateToken(userDetails, claims);
+                    String token = jwtutils.generateToken(userDetails);
                     HashMap<String , String > res = new HashMap<>();
                     res.put("jwtToken", token);
                     log.info("LoginServiceImpl::loginUser()=== END");

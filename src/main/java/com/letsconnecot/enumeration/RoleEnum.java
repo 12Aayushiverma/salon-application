@@ -2,7 +2,7 @@ package com.letsconnecot.enumeration;
 
 public enum RoleEnum {
 
-	Manager("Manager"), ADMIN("Admin"), EMPLOYEE("EMPLOYEE");
+	 ADMIN("Admin"), EMPLOYEE("EMPLOYEE"), USER("User"),EDITOR("Editor");
 
 	// declaring private variable for getting values
 	private String role;

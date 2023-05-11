@@ -24,6 +24,7 @@ public class Employee {
 	private String email;
 	private String description;
 	private String password;
+	private String role;
 
 //	@OneToOne(fetch = FetchType.EAGER,cascade = CascadeType.MERGE)
 //	@JoinColumn(name = "role_id") 
@@ -37,10 +38,10 @@ public class Employee {
 //	 @OneToOne(cascade = CascadeType.ALL)
 //	 @JoinColumn(name = "role_id", referencedColumnName = "id")
 //	 private Roles role;
-
+/*
 		private String role;
 
 	    @OneToMany(mappedBy = "employee", cascade = CascadeType.ALL,orphanRemoval = true)
-	    private Set<Permissions> permissions;
+	    private Set<Permissions> permissions;*/
 
 }
